@@ -1,0 +1,14 @@
+{
+  "name": "Reload go vsm",
+  "version": "1.2",
+  "description": "Reloads your gocd value stream map page to the latest pipeline run's page",
+  "permissions": [],
+
+  "content_scripts": [
+    {
+      "matches": ["*://*/go/pipelines/value_stream_map/*/*"],
+      "js": ["jquery.min.js", "reload-go.js"]
+    }
+  ],
+  "manifest_version": 2
+}
